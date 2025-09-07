@@ -1,11 +1,11 @@
 import random
 
-welcome_message = "WELCOME TO GOA MU GAMES!"
-cuypy_position = random.randint(1, 4)
+welcome_message = "WELCOME TO GOA DUTA PELAJAR GAMES!"
+HERSA_position = random.randint(1, 4)
 
-print("******************************")
+print("****************************************")
 print(f"** {welcome_message} **")
-print("******************************")
+print("****************************************")
 
 nama_user = input("masukan nama kamu: ")
 
@@ -13,13 +13,13 @@ nama_user = input("masukan nama kamu: ")
 bentuk = "|_|" 
 goasebelum = [bentuk] * 4 
 goa = goasebelum.copy()
-goa[cuypy_position - 1] = "|0_0|"
+goa[HERSA_position - 1] = "|0_0|"
 
 print(f'''Halo {nama_user} coba tebak dimana cuypy berada!''')
 print(" ".join(goasebelum))
 
 while True:
-    pilihan_user = int(input("\nMenurut kamu di goa nomor berapa CUYPY berada? [1 / 2 / 3 / 4]: "))
+    pilihan_user = int(input("\nMenurut kamu di goa nomor berapa HERSA berada? [1 / 2 / 3 / 4]: "))
     
     while True:
         konfirmasi = input(f"\napakah kamu yakin pilihanmu adalah {pilihan_user}?. y/n: ").lower()
@@ -32,7 +32,7 @@ while True:
         continue
         
     else:
-        if pilihan_user == cuypy_position:
+        if pilihan_user == HERSA_position:
             print("\nSelamat Kamu Menang!")
             print(f''' '''.join(goa))
             break
@@ -40,7 +40,7 @@ while True:
             print("\nMaaf kamu kalah!")
             print(" ".join(goa))
             print(f'''
-Posisi cuypy berada di goa nomor {cuypy_position}
+Posisi cuypy berada di goa nomor {HERSA_position}
 ''')
             while True:
                 coba = input("\nIngin mencoba lagi?. tekan enter jika ingin mencoba lagi!. ketik 'exit' jika ingin keluar: ")
