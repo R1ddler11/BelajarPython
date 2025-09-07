@@ -15,7 +15,7 @@ goasebelum = [bentuk] * 4
 goa = goasebelum.copy()
 goa[HERSA_position - 1] = "|0_0|"
 
-print(f'''Halo {nama_user} coba tebak dimana cuypy berada!''')
+print(f'''Halo {nama_user} coba tebak dimana HERSA berada!''')
 print(" ".join(goasebelum))
 
 while True:
@@ -40,7 +40,7 @@ while True:
             print("\nMaaf kamu kalah!")
             print(" ".join(goa))
             print(f'''
-Posisi cuypy berada di goa nomor {HERSA_position}
+Posisi HERSA berada di goa nomor {HERSA_position}
 ''')
             while True:
                 coba = input("\nIngin mencoba lagi?. tekan enter jika ingin mencoba lagi!. ketik 'exit' jika ingin keluar: ")
